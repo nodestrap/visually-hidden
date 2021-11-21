@@ -1,6 +1,6 @@
 {
   "name": "@nodestrap/visually-hidden",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "A generic element that is visually invisible while still allowing it to be exposed to screen readers.",
   "type": "module",
   "main": "dist/VisuallyHidden.jsx",
