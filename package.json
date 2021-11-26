@@ -1,9 +1,9 @@
 {
   "name": "@nodestrap/visually-hidden",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "A generic element that is visually invisible while still allowing it to be exposed to screen readers.",
   "type": "module",
-  "main": "dist/VisuallyHidden.jsx",
+  "main": "dist/VisuallyHidden.js",
   "types": "dist/VisuallyHidden.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,8 +32,8 @@
   "dependencies": {
     "@cssfn/cssfn": "^1.0.3",
     "@cssfn/react-cssfn": "^1.0.3",
-    "@nodestrap/element": "^4.0.1",
-    "@types/react": "^17.0.35",
+    "@nodestrap/element": "^4.0.2",
+    "@types/react": "^17.0.37",
     "react": "^17.0.2"
   }
 }

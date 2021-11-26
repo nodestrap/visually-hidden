@@ -46,14 +46,10 @@ export function VisuallyHidden(props) {
     // styles:
     const sheet = useVisuallyHiddenSheet();
     // jsx:
-    return (<Element 
-    // other props:
-    {...props} 
-    // semantics:
-    tag={props.tag ?? 'span'} 
-    // classes:
-    mainClass={props.mainClass ?? sheet.main}>
-            {props.children}
-        </Element>);
+    return (React.createElement(Element, { ...props, 
+        // semantics:
+        tag: props.tag ?? 'span', 
+        // classes:
+        mainClass: props.mainClass ?? sheet.main }, props.children));
 }
 export { VisuallyHidden as default };
