@@ -1,6 +1,6 @@
 /// <reference types="react" />
 import { ElementProps } from '@nodestrap/element';
-export declare const usesVisuallyHiddenLayout: () => import("@cssfn/cssfn").StyleCollection;
+export declare const usesVisuallyHiddenLayout: () => import("@cssfn/cssfn").Rule;
 export declare const useVisuallyHiddenSheet: import("@cssfn/types").Factory<import("jss").Classes<"main">>;
 export interface VisuallyHiddenProps<TElement extends HTMLElement = HTMLElement> extends ElementProps<TElement> {
 }

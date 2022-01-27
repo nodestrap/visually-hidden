@@ -3,9 +3,9 @@ import { default as React, } from 'react'; // base technology of our nodestrap c
 // cssfn:
 import { 
 // compositions:
-composition, mainComposition, imports, 
-// layouts:
-layout, } from '@cssfn/cssfn'; // cssfn core
+mainComposition, 
+// styles:
+style, imports, } from '@cssfn/cssfn'; // cssfn core
 import { 
 // hooks:
 createUseSheet, } from '@cssfn/react-cssfn'; // cssfn for react
@@ -13,34 +13,30 @@ createUseSheet, } from '@cssfn/react-cssfn'; // cssfn for react
 import { Element, } from '@nodestrap/element';
 // styles:
 export const usesVisuallyHiddenLayout = () => {
-    return composition([
-        layout({
-            // layouts:
-            display: 'inline-block',
-            // positions:
-            position: 'absolute !important',
-            // borders:
-            border: '0 !important',
-            // sizes:
-            width: '1px !important',
-            height: '1px !important',
-            overflow: 'hidden !important',
-            clip: 'rect(0,0,0,0) !important',
-            // spacings:
-            padding: '0 !important',
-            margin: '-1px !important',
-            // typos:
-            whiteSpace: 'nowrap !important',
-        }),
-    ]);
+    return style({
+        // layouts:
+        display: 'inline-block',
+        // positions:
+        position: [['absolute'], '!important'],
+        // borders:
+        border: '0 !important',
+        // sizes:
+        width: '1px !important',
+        height: '1px !important',
+        overflow: 'hidden !important',
+        clip: 'rect(0,0,0,0) !important',
+        // spacings:
+        padding: '0 !important',
+        margin: '-1px !important',
+        // typos:
+        whiteSpace: [['nowrap'], '!important'],
+    });
 };
 export const useVisuallyHiddenSheet = createUseSheet(() => [
-    mainComposition([
-        imports([
-            // layouts:
-            usesVisuallyHiddenLayout(),
-        ]),
-    ]),
+    mainComposition(imports([
+        // layouts:
+        usesVisuallyHiddenLayout(),
+    ])),
 ], /*sheetId :*/ 'zxyty1yae5'); // an unique salt for SSR support, ensures the server-side & client-side have the same generated class names
 export function VisuallyHidden(props) {
     // styles:
