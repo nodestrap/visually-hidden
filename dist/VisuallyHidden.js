@@ -19,15 +19,15 @@ export const usesVisuallyHiddenLayout = () => {
         // positions:
         position: [['absolute'], '!important'],
         // borders:
-        border: '0 !important',
+        border: [[0], '!important'],
         // sizes:
-        width: '1px !important',
-        height: '1px !important',
-        overflow: 'hidden !important',
-        clip: 'rect(0,0,0,0) !important',
+        width: [['1px'], '!important'],
+        height: [['1px'], '!important'],
+        overflow: [['hidden'], '!important'],
+        clip: [['rect(0,0,0,0)'], '!important'],
         // spacings:
-        padding: '0 !important',
-        margin: '-1px !important',
+        padding: [[0], '!important'],
+        margin: [['-1px'], '!important'],
         // typos:
         whiteSpace: [['nowrap'], '!important'],
     });
